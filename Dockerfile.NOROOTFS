@@ -26,4 +26,4 @@ VOLUME ["/app/config", "/app/testdata", "/rootfs"]
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["daemon"]
+CMD ["runner"]

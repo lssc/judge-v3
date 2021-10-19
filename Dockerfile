@@ -31,4 +31,4 @@ ENV NODE_ENV=production \
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
-CMD ["daemon"]
+CMD ["runner"]
