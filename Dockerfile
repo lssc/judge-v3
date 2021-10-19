@@ -29,8 +29,6 @@ ENV NODE_ENV=production \
     SYZOJ_JUDGE_TESTDATA_PATH=/app/testdata \
     SYZOJ_JUDGE_DO_NOT_USE_X32_ABI=true
 
-VOLUME ["/app/config", "/app/testdata"]
-
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["daemon"]
